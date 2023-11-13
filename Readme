@@ -1,0 +1,86 @@
+
+________________________________________________________________________________
+|                                                                              |
+|                               Group: 313CB                                   |
+|                          Last Name: Gențiana Adeane                          |
+|                            First Name: Marcu                                 |
+|______________________________________________________________________________|
+|                                                                              |
+|                                                                              |
+|                         _____                    _____                       |
+|                        /\    \                  /\    \                      |
+|                       /::\    \                /::\    \                     |
+|                      /::::\    \              /::::\    \                    |
+|                     /::::::\    \            /::::::\    \                   |
+|                    /:::/\:::\    \          /:::/\:::\    \                  |
+|                   /:::/__\:::\    \        /:::/  \:::\    \                 |
+|                   \:::\   \:::\    \      /:::/    \:::\    \                |
+|                 ___\:::\   \:::\    \    /:::/    / \:::\    \               |
+|                /\   \:::\   \:::\    \  /:::/    /   \:::\ ___\              |
+|               /::\   \:::\   \:::\____\/:::/____/     \:::|    |             |
+|               \:::\   \:::\   \::/    /\:::\    \     /:::|____|             |
+|                \:::\   \:::\   \/____/  \:::\    \   /:::/    /              |
+|                 \:::\   \:::\    \       \:::\    \ /:::/    /               |
+|                  \:::\   \:::\____\       \:::\    /:::/    /                |
+|                   \:::\  /:::/    /        \:::\  /:::/    /                 |
+|                    \:::\/:::/    /          \:::\/:::/    /                  |
+|                     \::::::/    /            \::::::/    /                   |
+|                      \::::/    /              \::::/    /                    |
+|                       \::/    /                \::/____/                     |
+|                        \/____/                  ~~                           |
+|                                                                              |
+|                                                                              |
+|                                                                              |
+|                                                                              |
+|                                     Tema 1                                   |
+|                                   TAB SIZE: 4                                |
+|______________________________________________________________________________|
+|                                                                              |
+|                                little_functions                              |
+|______________________________________________________________________________|
+|                                                                              |
+|    Am implementat funcții pe care le voi folosi atât în data_definition.c    |
+| cât și în data_manipulation.c. Funcțiile implementate eliberează celulele și |
+| liniile rând pe rând, iar searchTable caută în baza de date tabelul cu       |
+| numele dat ca parametru.                                                     |
+|______________________________________________________________________________|
+|                                                                              |
+|                                data_definition                               |
+|______________________________________________________________________________|
+|                                                                              |
+|    Am implementat funcția de inițializare a bazei de date și am creat alte   |
+| două funcții, una pentru eliberarea coloanelor și una pentru eliberarea      |
+| întregului tabel, cu toate datele care se află în acesta.                    |
+|    În DELETE_DB am eliberat tabelele pe rând, apoi întreaga bază de date.    |
+|    Implementând mai multe funcții, am avut avantajul lipsei codului          |
+| duplicat.                                                                    |
+|    În funcția CREATE, am alocat pe rând elementele tabelului pe măsură ce    |
+| primeam nume în vectorul column_names, de la stdin.                          |
+|    DELETE caută tabelul și îl eliberează dacă îl găsește, altfel afișează un |
+| mesaj de eroare.                                                             |
+|______________________________________________________________________________|
+|                                                                              |
+|                                  data_query                                  |
+|______________________________________________________________________________|
+|                                                                              |
+|    Am căutat cu ajutorul if-urilor celulele poziționate sub coloana dată ca  |
+| parametru care îndeplinesc condiția dorită, în funcție de tipul liniilor.    |
+|    Am afișat tabelul împreună doar cu liniile care conțineau astfel de       |
+| celule în funcția SEARCH.                                                    |
+|    Restul sunt funcții care afișează linii, coloane și padding.              |
+|______________________________________________________________________________|
+|                                                                              |
+|                               data_manipulation                              |
+|______________________________________________________________________________|
+|                                                                              |
+|    CLEAR șterge toate liniile dintr-un tabel. Am creat funcții de adăugare   |
+| de linii, în funcție de tipul lor și le-am apelat în ADD.                    |
+|    Pentru DELETE_LINES am folosit un raționament asemănător celui folosit    |
+| la funcția SEARCH din data_query.                                            |
+|______________________________________________________________________________|
+|                                                                              |
+|                                     tema1                                    |
+|______________________________________________________________________________|
+|                                                                              |
+|    Aici am alocat comenzile și am apelat funcțiile corespunzătoare lor.      |
+|______________________________________________________________________________|
